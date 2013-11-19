@@ -18,7 +18,7 @@ RUN mkdir /var/www
 
 RUN curl https://gist.github.com/Andyvanee/3728e498455219cdada2/raw/7592eeccc96fb50161bbdd270dfdabe06fc66d54/Gemfile > /var/www/Gemfile
 
-RUN cat https://gist.github.com/Andyvanee/b95b463126cdb9d5630c/raw/13988ed1f517cdf96b4b6e7ed45e3351567747c1/nginx.conf > /etc/nginx/sites-available/default
+RUN curl https://gist.github.com/Andyvanee/b95b463126cdb9d5630c/raw/13988ed1f517cdf96b4b6e7ed45e3351567747c1/nginx.conf > /etc/nginx/sites-available/default
 
 RUN cd /var/www && bundle install
 
